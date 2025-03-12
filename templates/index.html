@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Nothea</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-flex">
+            <img class="img" src="{{ url_for('static', filename='nothea.png') }}">
+            <h1>Nothea</h1>
+        </div>
+    </header>
+    <main>
+        <div id="chatbox"></div>
+        <div class="input"></div>
+        <input type="text" id="userInput" placeholder="Ask Nothea...">
+        <button id="sendButton">Send</button>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
